@@ -1,0 +1,82 @@
+@import "compass"
+
+$female_color: #E98E9F
+$male_color: #79A0AC
+
+html, body
+  font-family: "Helvetica Neue", Helvetica, Arial, sans
+
+body
+  padding: 20px 20px 100px 20px
+  
+#content
+  width: 600px
+  margin-left: 100px
+
+p, ol li, ul li
+  font-size: 1.2em
+  line-height: 1.4em
+  color: #666
+  a
+    color: #000
+
+p.footer
+  padding-top: 100px
+  color: #CCC
+  a
+    color: #999
+
+ul, ol
+  margin: 0
+  li
+    padding: 3px 0
+    
+ul
+  padding: 0 0 0 0
+  list-style-type: none
+
+ol
+  padding: 0 0 0 26px
+  list-style-type: upper-alpha
+
+h1
+  font-size: 4em
+  
+h2
+
+h3
+  margin-top: 30px
+  &.female
+    color: $female_color
+
+  &.male
+    color: $male_color
+
+ul.stripers
+  float: none
+  clear: both
+  overflow: hidden
+  margin: 0
+  padding: 0
+  > li
+    display: block
+    width: 40px
+    height: 40px
+    margin: 0 4px 4px 0
+    padding: 0
+    float: left
+    //border: 10px solid black
+
+    &.female
+      background-color: $female_color
+
+    &.male
+      background-color: $male_color
+
+    &.vertical
+      border-top: none
+      border-bottom: none
+
+    &.slender
+      //width: 40px
+      //border-width: 40px
